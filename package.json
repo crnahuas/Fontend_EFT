@@ -2,7 +2,17 @@
   "name": "novaplay-eft",
   "private": true,
   "version": "1.0.0",
+  "description": "Tienda digital de videojuegos desarrollada para la Evaluación Final Transversal de Desarrollo Frontend I.",
+  "homepage": "https://crnahuas.github.io/Fontend_EFT/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crnahuas/Fontend_EFT.git"
+  },
   "type": "module",
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
