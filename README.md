@@ -9,6 +9,10 @@ NovaPlay es una tienda digital de videojuegos desarrollada con React, JavaScript
 - Aplicación: [https://crnahuas.github.io/Fontend_EFT/](https://crnahuas.github.io/Fontend_EFT/)
 - Repositorio: [https://github.com/crnahuas/Fontend_EFT](https://github.com/crnahuas/Fontend_EFT)
 
+## Capturas
+
+La carpeta versionada [`docs/capturas`](docs/capturas/README.md) contiene una vista completa de escritorio y capturas ampliadas del inicio, el catálogo y el formulario en distintos tamaños de pantalla.
+
 ## Requisitos
 
 - Node.js 20 o superior.
