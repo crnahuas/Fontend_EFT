@@ -4,6 +4,11 @@ Cristian Nahuas · Desarrollo Frontend I · PFY2201
 
 NovaPlay es una tienda digital de videojuegos desarrollada con React, JavaScript, HTML semántico, CSS y Bootstrap 5. El sitio carga su catálogo desde un archivo JSON, permite buscar y filtrar productos, revisar sus detalles, administrar un carrito y enviar un formulario de contacto validado.
 
+## Sitio publicado
+
+- Aplicación: [https://crnahuas.github.io/Fontend_EFT/](https://crnahuas.github.io/Fontend_EFT/)
+- Repositorio: [https://github.com/crnahuas/Fontend_EFT](https://github.com/crnahuas/Fontend_EFT)
+
 ## Requisitos
 
 - Node.js 20 o superior.
@@ -24,6 +29,16 @@ Para comprobar la versión de producción:
 npm run build
 npm run preview
 ```
+
+## Uso del sitio
+
+1. Recorre el catálogo o utiliza la búsqueda y los filtros de categoría y plataforma.
+2. Abre “Ver detalles” para revisar las características y versiones disponibles de un juego.
+3. Selecciona una plataforma y agrega el producto al carrito.
+4. Ajusta las cantidades, elimina productos o finaliza la compra simulada.
+5. Completa el formulario de contacto; los campos se validan antes del envío simulado.
+
+El carrito se conserva en el navegador mediante `localStorage`. Los datos del catálogo y el formulario se utilizan únicamente con fines demostrativos.
 
 ## Funcionalidades principales
 
@@ -49,7 +64,7 @@ npm run preview
 ## Estructura
 
 ```text
-NovaPlay_EFT/
+Frontend_EFT/
 ├── public/
 │   ├── assets/img/
 │   ├── data/products.json
