@@ -94,3 +94,35 @@ Frontend_EFT/
 `App.jsx` mantiene los estados compartidos del catálogo, filtros y carrito. Los productos se obtienen mediante `fetch` dentro de `useEffect`; luego `useMemo` calcula el catálogo filtrado. Los datos y controladores se distribuyen a los componentes mediante props.
 
 `ContactForm.jsx` conserva los campos en estado local, valida la información antes del envío simulado y muestra mensajes específicos cuando los datos están incompletos o tienen un formato incorrecto.
+
+## Publicación en GitHub Pages
+
+El proyecto usa rutas relativas mediante `base: "./"` en `vite.config.js`. Esto permite servir correctamente el JavaScript, los estilos, las imágenes y el catálogo desde una subruta de GitHub Pages.
+
+Para actualizar la versión publicada:
+
+```sh
+npm run deploy
+```
+
+Este comando genera `dist` y publica su contenido en la rama `gh_pages`. En la configuración del repositorio, GitHub Pages debe usar esa rama desde la carpeta raíz.
+
+## Pruebas recomendadas
+
+- Confirmar que los 11 productos se carguen desde el JSON.
+- Buscar por nombre y combinar los filtros de categoría y plataforma.
+- Comprobar el estado sin resultados con una búsqueda inexistente.
+- Agregar un mismo juego para dos plataformas diferentes.
+- Aumentar, disminuir, eliminar y vaciar productos del carrito.
+- Actualizar el navegador y verificar la persistencia del carrito.
+- Enviar el formulario vacío, con un correo incorrecto y con datos válidos.
+- Revisar la interfaz en anchos de 375 px, 768 px y 1440 px.
+- Ejecutar `npm run build` antes de publicar o entregar el proyecto.
+
+## Accesibilidad y adaptación
+
+La interfaz incluye estructura HTML semántica, textos alternativos, etiquetas asociadas a los controles, estados anunciados con `aria-live`, foco visible, enlace para saltar al contenido y compatibilidad con la preferencia de movimiento reducido. La distribución se adapta mediante Bootstrap, CSS Grid, Flexbox y media queries.
+
+## Alcance académico
+
+La compra y el envío del formulario son simulaciones locales. Los precios son ilustrativos y las imágenes y marcas de videojuegos pertenecen a sus respectivos propietarios; se utilizan únicamente como contenido demostrativo para este proyecto educativo.
