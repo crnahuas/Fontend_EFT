@@ -79,23 +79,3 @@ NovaPlay_EFT/
 `App.jsx` mantiene los estados compartidos del catálogo, filtros y carrito. Los productos se obtienen mediante `fetch` dentro de `useEffect`; luego `useMemo` calcula el catálogo filtrado. Los datos y controladores se distribuyen a los componentes mediante props.
 
 `ContactForm.jsx` conserva los campos en estado local, valida la información antes del envío simulado y muestra mensajes específicos cuando los datos están incompletos o tienen un formato incorrecto.
-
-## Publicación en GitHub Pages
-
-1. Crea un repositorio para la EFT y sube el proyecto a la rama `main`.
-2. Ejecuta `npm run deploy`.
-3. Configura GitHub Pages para publicar desde la raíz de la rama `gh_pages`.
-4. Comprueba que el catálogo, las imágenes y la navegación funcionen en la URL publicada.
-
-## Pruebas recomendadas
-
-- Buscar por nombre y combinar filtros de categoría y plataforma.
-- Agregar el mismo juego para plataformas diferentes.
-- Aumentar, disminuir, eliminar y vaciar productos del carrito.
-- Actualizar el navegador para comprobar la persistencia del carrito.
-- Enviar el formulario vacío, con correo incorrecto y finalmente con datos válidos.
-- Revisar el sitio a 375 px, 768 px y 1440 px en Chrome, Firefox y Edge.
-
-## Nota sobre el catálogo
-
-Los precios son valores ilustrativos para fines académicos. Las imágenes y marcas de videojuegos pertenecen a sus respectivos propietarios y se utilizan únicamente como contenido demostrativo en este proyecto educativo.
